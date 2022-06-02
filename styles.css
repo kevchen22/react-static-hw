@@ -1,0 +1,40 @@
+.main{
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 25px;
+    height: 95vh;
+    width: 95vw;
+    background-color: cornsilk;
+}
+
+.widgets{
+    grid-row: 1 / span 8;
+    grid-column: 1;
+    border: 1px black solid;
+    background-color: lightgrey;
+}
+
+.stats{
+    border: 1px black solid;
+    grid-row: 1 / span 3;
+    grid-column: auto;
+    background-color: lightgrey;
+}
+
+.visitors{
+    border: 1px black solid;
+    grid-row:  4 / span 5;
+    grid-column: 2 / span 3;
+    background-color: lightgrey;
+}
+
+.innerBox{
+    height: 60%;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 25%;
+    margin-top: 5%;
+    background-color: gray;
+}
